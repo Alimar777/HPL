@@ -2,11 +2,11 @@
 
 #SBATCH --job-name HPL_ParamSweep
 #SBATCH --partition general
-#SBATCH --time 01:00:00
+#SBATCH --time 00:15:00
 #SBATCH --nodes 1
-#SBATCH --cpus-per-node 1
+#SBATCH --cpus-per-node 32
 #SBATCH --mem 0
-#SBATCH --array 1-16
+#SBATCH --array 1-20
 
 # Load the required packages (gcc 11 and HPL)
 module load gcc/11.2.0-655h hpl
