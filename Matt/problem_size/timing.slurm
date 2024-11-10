@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=HPL_timing_analysis
-#SBATCH --partition=debug
+#SBATCH --partition=general
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node = 32
 #SBATCH --mem=16GB

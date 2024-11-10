@@ -6,8 +6,8 @@
 #SBATCH --nodes 4
 #SBATCH --ntasks-per-node 8
 #SBATCH --cpus-per-task 4        #OMP NUM THREADS VALUE
-#SBATCH --mem 8GB
-#SBATCH --array 1-2
+#SBATCH --mem 16GB
+#SBATCH --array 1-36
 
 # Load the required packages (gcc 11 and HPL)
 module load gcc/11.2.0-655h hpl
