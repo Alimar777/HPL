@@ -2,10 +2,11 @@
 
 #SBATCH --job-name HPL_ParamSweep
 #SBATCH --partition general
-#SBATCH --time 00:30:00
-#SBATCH --nodes 2
+#SBATCH --time 00:10:00
+#SBATCH --nodes 4
 #SBATCH --ntasks-per-node 8
-#SBATCH --mem=0
+#SBATCH --cpus-per-task 4        #OMP NUM THREADS VALUE
+#SBATCH --mem 8GB
 #SBATCH --array 1-2
 
 # Load the required packages (gcc 11 and HPL)
