@@ -2,7 +2,7 @@
 #SBATCH --job-name=HPL_timing_analysis
 #SBATCH --partition=general
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node = 32
+#SBATCH --ntasks-per-node 32
 #SBATCH --mem=16GB
 #SBATCH --output=timing_%dcpu.out
 #SBATCH --error=timing_%dcpu.err
