@@ -3,9 +3,7 @@
 #SBATCH --partition=general
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node 32
-#SBATCH --mem=16GB
-#SBATCH --output=timing_%dcpu.out
-#SBATCH --error=timing_%dcpu.err
+#SBATCH --mem=0G
 
 module load gcc/11.2.0-655h hpl
 
@@ -20,4 +18,4 @@ echo "Running with $cpus CPUs"
 srun --mpi=pmi2 xhpl 
 
 # Save the output for review
-mv slurm-$(SLURM_JOB_ID).out timing_$(SLURM_NNODES)_$(SLURM_NTASKS_PER_NODE)cpu.out
+mv slurm-${SLURM_JOB_ID}.out timing_${SLURM_NNODES}_${SLURM_NTASKS_PER_NODE}cpu.out
