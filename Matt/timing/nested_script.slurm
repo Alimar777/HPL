@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#1) CHMOD +x nested_script.slurm
+#1) chmod +x nested_script.slurm
 #2) ./nested_script.slurm
 
 for cpus in 1 2 4 8 16 32; do
