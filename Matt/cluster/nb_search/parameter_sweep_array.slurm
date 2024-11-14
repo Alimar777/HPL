@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#SBATCH --job-name N_size
+#SBATCH --job-name nb_search
 #SBATCH --partition general
 #SBATCH --time 02:00:00
 #SBATCH --nodes 2
 #SBATCH --ntasks-per-node 16
 #SBATCH --mem=0
-#SBATCH --array 1-33
+#SBATCH --array 1-12
 
 # Load the required packages (gcc 11 and HPL)
 module load gcc/11.2.0-655h hpl
