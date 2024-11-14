@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name pq_heatmap
-#SBATCH --partition general
+#SBATCH --partition mainframe01
 #SBATCH --time 02:00:00
 #SBATCH --nodes 2
 #SBATCH --ntasks-per-node 16
