@@ -3,7 +3,7 @@
 #SBATCH --partition=general
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node 32
-#SBATCH --mem=64G
+#SBATCH --mem=0G
 
 module load gcc/11.2.0-655h hpl
 
