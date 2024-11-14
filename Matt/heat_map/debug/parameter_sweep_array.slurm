@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name heat_map
-#SBATCH --partition general
+#SBATCH --partition debug
 #SBATCH --time 01:00:00
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-node 8
