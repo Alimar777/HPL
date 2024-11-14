@@ -3,10 +3,10 @@
 #SBATCH --job-name heat_map
 #SBATCH --partition general
 #SBATCH --time 01:00:00
-#SBATCH --nodes 2
-#SBATCH --ntasks-per-node 32
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 8
 #SBATCH --mem=0G
-#SBATCH --array 1-64
+#SBATCH --array 1-8
 
 # Load the required packages (gcc 11 and HPL)
 module load gcc/11.2.0-655h hpl
