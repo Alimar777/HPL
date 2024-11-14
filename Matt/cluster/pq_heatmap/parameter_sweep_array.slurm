@@ -1,15 +1,13 @@
 #!/bin/bash
 
 #SBATCH --job-name pq_heatmap
-#SBATCH --partition debug
 #SBATCH --time 02:00:00
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-node 32
 #SBATCH --mem=0
 #SBATCH --array 1-51
 
-# Load the required packages (gcc 11 and HPL)
-module load gcc/11.2.0-655h hpl
+spack load hpl
 
 export OMP_PROC_BIND=TRUE
 export OMP_PLACES=cores
