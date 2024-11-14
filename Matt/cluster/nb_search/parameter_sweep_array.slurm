@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name nb_search
-#SBATCH --partition mainframe01
+#SBATCH --partition debug
 #SBATCH --time 02:00:00
 #SBATCH --nodes 2
 #SBATCH --ntasks-per-node 16
