@@ -61,7 +61,7 @@ echo Read param L_DEPTH: $L_DEPTH
 
 # Create a new working directory for each instance of xhpl since it needs it expects it's own HPL.dat
 # SCRATCH_DIR=/carc/scratch/users/$USER
-SCRATCH_DIR=/users/jtenorio51/scratch
+SCRATCH_DIR=/users/mrackley/scratch
 
 # Make a temporary directory for our work - we will delete this at the end
 TMP_DIR=$(mktemp --directory -p $SCRATCH_DIR)
