@@ -5,7 +5,7 @@
 #SBATCH --time 01:00:00
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-node 8
-#SBATCH --mem=0G
+#SBATCH --mem=20G
 #SBATCH --array 1-8
 
 # Load the required packages (gcc 11 and HPL)
