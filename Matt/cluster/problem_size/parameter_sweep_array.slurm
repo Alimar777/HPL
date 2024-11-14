@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name N_size
-#SBATCH --time 02:00:00
+#SBATCH --time 24:00:00
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-node 32
 #SBATCH --mem=0
