@@ -3,8 +3,8 @@
 #SBATCH --job-name N_size
 #SBATCH --partition debug
 #SBATCH --time 02:00:00
-#SBATCH --nodes 2
-#SBATCH --ntasks-per-node 16
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 32
 #SBATCH --mem=0
 #SBATCH --array 1-33
 
