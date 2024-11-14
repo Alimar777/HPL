@@ -5,7 +5,7 @@
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-node 32
 #SBATCH --mem=0
-#SBATCH --array 1-31
+#SBATCH --array 1-481
 
 spack load hpl
 
